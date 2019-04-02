@@ -17,12 +17,12 @@ class TestGame(unittest.TestCase):
 
     def test_is_valid(self):
         new_game = Game()
-        new_game.grid = list('EXTERIEUR') # Force the grid to a test case:
-        self.assertIs(new_game.is_valid('EUREKA'), True)
-        self.assertEqual(new_game.grid, list('EXTERIEUR')) # Make sure the grid remained untouched
+        new_game.grid = list('RUEIRETXE') # Force the grid to a test case:
+        self.assertIs(new_game.is_valid('EXTERIEUR'), True)
+        self.assertEqual(new_game.grid, list('RUEIRETXE')) # Make sure the grid remained untouched
 
     def test_is_invalid(self):
         new_game = Game()
-        new_game.grid = list('EXTERIEUR') # Force the grid to a test case:
+        new_game.grid = list('RUEIRETXE') # Force the grid to a test case:
         self.assertIs(new_game.is_valid('SANDWICH'), False)
-        self.assertEqual(new_game.grid, list('EXTERIEUR')) # Make sure the grid remained untouched
+        self.assertEqual(new_game.grid, list('RUEIRETXE')) # Make sure the grid remained untouched

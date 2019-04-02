@@ -14,7 +14,7 @@ class Game:
         l = self.grid.copy() # Consume letters from the grid
         for l in word:
             if l in ls:
-                ls.remove(l)
+                ls.remove(letter)
             else:
                 return False
         return True
